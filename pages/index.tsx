@@ -1,10 +1,9 @@
-import Button from "../components/Button";
 import Head from "next/head";
-import Image from "next/image";
+import { Container, Heading, Text, Button } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Bitmono</title>
         <meta
@@ -15,31 +14,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>An open-source, free protector for Mono</h1>
+        <Heading>An open-source, free protector for Mono</Heading>
 
-        <p>
+        <Text>
           BitMono is an free open-source C# obfuscator which in mostly cases
           works only with Mono - well known as fork of .NET Framework but with
           custom bugs or Unity.
-        </p>
+        </Text>
 
-        <div>
-          <Button />
-        </div>
+        <Button>Get Started</Button>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
