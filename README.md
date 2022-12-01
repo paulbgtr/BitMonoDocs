@@ -20,3 +20,7 @@ git clone https://github.com/gibsol/bitmonodocs
 npm i
 npm run dev
 ```
+
+## Licence
+
+[MIT](https://github.com/gibsol/bitmonodocs/licence)
