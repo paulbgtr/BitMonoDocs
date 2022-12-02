@@ -8,13 +8,32 @@ const theme = extendTheme({
         bg: "#000",
         color: "white",
       },
+      a: {
+        color: "blue.500",
+        _hover: {
+          textDecoration: "underline",
+        },
+      },
     },
   },
   components: {
+    Heading: {
+      variants: {
+        h1: {
+          fontWeight: "bold",
+          lineHeight: "1.2",
+          letterSpacing: "-0.02em",
+        },
+        h2: {
+          fontWeight: "0",
+          lineHeight: "1.2",
+          letterSpacing: "-0.02em",
+        },
+      },
+    },
     Button: {
       baseStyle: {
         fontWeight: "bold",
-        width: "140px",
         borderRadius: "13px",
         transitionDuration: "0.3s",
         _hover: {
