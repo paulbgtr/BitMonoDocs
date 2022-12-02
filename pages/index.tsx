@@ -22,12 +22,12 @@ export default function Home() {
           </Heading>
 
           <Text fontSize={[18, 20]} mt={[6, 7]}>
-            BitMono is an free, open-source C# obfuscator which in mostly cases
-            works only with Mono - well known as fork of .NET Framework but with
-            custom bugs or Unity.
+            Bit Mono is a free, open-source C# obfuscator that in most cases
+            works only with Mono - well known as a fork of .NET Framework but
+            with custom bugs or Unity.
           </Text>
 
-          <Button
+          {/* <Button
             onClick={() => {
               router.push("/download");
             }}
@@ -35,7 +35,7 @@ export default function Home() {
             variant={"light"}
           >
             Get Started
-          </Button>
+          </Button> */}
         </Container>
       </main>
     </>
