@@ -1,7 +1,9 @@
+import { useRouter } from "next/router";
 import Head from "next/head";
 import { Container, Heading, Text, Button } from "@chakra-ui/react";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -19,13 +21,19 @@ export default function Home() {
             An open-source, free protector for Mono
           </Heading>
 
-          <Text fontSize={[18, 20]} mt={5}>
+          <Text fontSize={[18, 20]} mt={[6, 7]}>
             BitMono is an free, open-source C# obfuscator which in mostly cases
             works only with Mono - well known as fork of .NET Framework but with
             custom bugs or Unity.
           </Text>
 
-          <Button mt={5} variant={"dark"}>
+          <Button
+            onClick={() => {
+              router.push("/download");
+            }}
+            mt={[6, 7]}
+            variant={"light"}
+          >
             Get Started
           </Button>
         </Container>
