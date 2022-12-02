@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Bitmono</title>
+        <title>Bitmono | Homepage</title>
         <meta
           name="description"
           content="An open-source, free protector for Mono"
@@ -27,15 +27,15 @@ export default function Home() {
             with custom bugs or Unity.
           </Text>
 
-          {/* <Button
+          <Button
             onClick={() => {
-              router.push("/download");
+              router.push("/downloads");
             }}
             mt={[6, 7]}
             variant={"light"}
           >
             Get Started
-          </Button> */}
+          </Button>
         </Container>
       </main>
     </>
