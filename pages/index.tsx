@@ -14,15 +14,21 @@ export default function Home() {
       </Head>
 
       <main>
-        <Heading>An open-source, free protector for Mono</Heading>
+        <Container maxWidth={"3xl"} mt={[50, 140]}>
+          <Heading fontSize={[50, 64]} variant={"title"}>
+            An open-source, free protector for Mono
+          </Heading>
 
-        <Text>
-          BitMono is an free open-source C# obfuscator which in mostly cases
-          works only with Mono - well known as fork of .NET Framework but with
-          custom bugs or Unity.
-        </Text>
+          <Text fontSize={[18, 20]} mt={5}>
+            BitMono is an free, open-source C# obfuscator which in mostly cases
+            works only with Mono - well known as fork of .NET Framework but with
+            custom bugs or Unity.
+          </Text>
 
-        <Button>Get Started</Button>
+          <Button mt={5} variant={"dark"}>
+            Get Started
+          </Button>
+        </Container>
       </main>
     </>
   );
