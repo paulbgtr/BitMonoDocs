@@ -5,8 +5,6 @@
     </h2>
 </div>
 
-<hr />
-
 ### [BitMono](https://github.com/sunnamed434/BitMono)'s website.
 
 It includes Bitmono's documentation as well as other information about the project.
@@ -23,4 +21,4 @@ npm run dev
 
 ## Licence
 
-[MIT](https://github.com/gibsol/bitmonodocs/licence)
+[MIT](https://github.com/Gibsol/BitMonoDocs/blob/main/LICENCE)
