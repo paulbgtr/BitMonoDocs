@@ -9,6 +9,10 @@
 
 It includes Bitmono's documentation as well as other information about the project.
 
+## Project Status
+
+This project is unfinished and is in active development.
+
 ## Development
 
 Clone the repository, install the dependencies and start the application
