@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Button as ChakraButton, Link } from "@chakra-ui/react";
+import { Button as ChakraButton } from "@chakra-ui/react";
 import { FC } from "react";
 
 interface ButtonProps {
