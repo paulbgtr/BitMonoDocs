@@ -41,6 +41,7 @@ const theme = extendTheme({
           fontWeight: "0",
           _hover: {
             textDecoration: "none",
+            opacity: 0.8,
           },
         },
       },
