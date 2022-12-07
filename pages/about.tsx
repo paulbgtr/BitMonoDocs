@@ -1,3 +1,5 @@
+// todo: Convert this into a Markdown file
+
 import Head from "next/head";
 import {
   Container,
@@ -7,11 +9,6 @@ import {
   ListItem,
   Link,
 } from "@chakra-ui/react";
-
-const downloadLink = () => {
-  window.location.href =
-    " https://sourceforge.net/projects/bitmono/files/v0.3.3-alpha.8/";
-};
 
 export default function About() {
   return (
