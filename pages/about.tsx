@@ -110,7 +110,7 @@ export default function About() {
               </Link>{" "}
               (based and improved on existing protection)
             </ListItem>
-            <ListItem>Call to call</ListItem>
+            <ListItem>Call to calli</ListItem>
             <ListItem>FieldsHiding (Deprecated)</ListItem>
             <ListItem>ObjecctReturnType</ListItem>
             <ListItem>NoNamespaces</ListItem>

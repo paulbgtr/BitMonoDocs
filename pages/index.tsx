@@ -22,9 +22,8 @@ export default function Home() {
           </Heading>
 
           <Text fontSize={[18, 20]} mt={[6, 7]}>
-            BitMono is a free, open-source C# obfuscator that in most cases
-            works only with Mono - well known as a fork of .NET Framework but
-            with custom bugs or Unity.
+            Free open-source protector for Mono, empty decompilers? bits?
+            crashes?! All this and even more is right here!
           </Text>
 
           <Button
