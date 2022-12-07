@@ -26,8 +26,8 @@ export default function DownloadPage() {
       </Head>
 
       <main>
-        <Container maxWidth={"3xl"} mt={[50, 140]}>
-          <Heading as={"h1"} mb={[2, 3]} fontSize={[50, 64]} variant={"h1"}>
+        <Container maxWidth={"3xl"}>
+          <Heading as={"h1"} mb={4} fontSize={[50, 64]} variant={"h1"}>
             Downloads
           </Heading>
 
