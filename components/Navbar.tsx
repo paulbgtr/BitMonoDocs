@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { FC } from "react";
 import {
   Box,
   Flex,
@@ -10,24 +10,24 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const Links = ["About"];
+const links = {
+  about: "/about",
+  documentation: "/documentation",
+};
+interface NavbarLinkProps {
+  href: string;
+  title: string;
+}
 
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    variant={"navLink"}
-    _hover={{
-      textDecoration: "none",
-      opacity: 0.6,
-    }}
-    href={"/about"}
-  >
-    {children}
-  </Link>
-);
+const NavbarLink: FC<NavbarLinkProps> = (props) => {
+  return (
+    <Link variant={"navLink"} href={props.href}>
+      {props.title}
+    </Link>
+  );
+};
 
-export default function Simple() {
+function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -47,9 +47,8 @@ export default function Simple() {
             <Box>Bitmono</Box>
           </Link>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
-            {Links.map((link) => (
-              <NavLink key={link}>{link}</NavLink>
-            ))}
+            <NavbarLink href={links["about"]} title={"About"} />
+            <NavbarLink href={links["documentation"]} title={"Documentation"} />
           </HStack>
         </HStack>
       </Flex>
@@ -57,12 +56,13 @@ export default function Simple() {
       {isOpen ? (
         <Box pb={4} display={{ md: "none" }}>
           <Stack as={"nav"} spacing={4}>
-            {Links.map((link) => (
-              <NavLink key={link}>{link}</NavLink>
-            ))}
+            <NavbarLink href={links["about"]} title={"About"} />
+            <NavbarLink href={links["documentation"]} title={"Documentation"} />
           </Stack>
         </Box>
       ) : null}
     </Box>
   );
 }
+
+export default Navbar;
