@@ -39,6 +39,8 @@ export default function Simple() {
           aria-label={"Open Menu"}
           display={{ md: "none" }}
           onClick={isOpen ? onClose : onOpen}
+          colorScheme={"black"}
+          color={"white"}
         />
         <HStack spacing={8} alignItems={"center"}>
           <Link variant={"navLink"} href={"/"}>

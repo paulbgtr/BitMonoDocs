@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import {
   Container,
   Heading,
@@ -10,12 +11,9 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-const downloadLink = () => {
-  window.location.href =
-    " https://sourceforge.net/projects/bitmono/files/v0.3.3-alpha.8/";
-};
-
 export default function DownloadPage() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -34,12 +32,12 @@ export default function DownloadPage() {
           </Heading>
 
           <VStack>
-            <Alert rounded={"md"} status="error">
+            <Alert color={"black"} rounded={"md"} status="error">
               <AlertIcon />
               It is important to note that BitMono is still under active
               development and full stability is not guaranteed yet.
             </Alert>
-            <Alert rounded={"md"} status="info">
+            <Alert color={"black"} rounded={"md"} status="info">
               <AlertIcon />
               At the moment BitMono has been tested only on Windows. However,
               theoretically, the CLI version can also be installed on
@@ -57,7 +55,14 @@ export default function DownloadPage() {
             Latest Release
           </Heading>
 
-          <Button onClick={() => downloadLink()} variant={"light"}>
+          <Button
+            onClick={() =>
+              router.replace(
+                " https://sourceforge.net/projects/bitmono/files/v0.3.3-alpha.8/"
+              )
+            }
+            variant={"light"}
+          >
             Download BitMono
           </Button>
 
