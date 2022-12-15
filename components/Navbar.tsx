@@ -27,7 +27,7 @@ const NavbarLink: FC<NavbarLinkProps> = (props) => {
   );
 };
 
-function Navbar() {
+const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -63,6 +63,6 @@ function Navbar() {
       ) : null}
     </Box>
   );
-}
+};
 
 export default Navbar;

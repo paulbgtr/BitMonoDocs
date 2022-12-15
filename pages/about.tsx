@@ -10,7 +10,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-export default function About() {
+const About = () => {
   return (
     <>
       <Head>
@@ -118,4 +118,6 @@ export default function About() {
       </main>
     </>
   );
-}
+};
+
+export default About;

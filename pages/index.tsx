@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { Container, Heading, Text, Button } from "@chakra-ui/react";
 
-export default function Home() {
+const Home = () => {
   const router = useRouter();
   return (
     <>
@@ -50,4 +50,6 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+export default Home;

@@ -11,7 +11,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-export default function DownloadPage() {
+const DownloadPage = () => {
   const router = useRouter();
 
   return (
@@ -81,4 +81,6 @@ export default function DownloadPage() {
       </main>
     </>
   );
-}
+};
+
+export default DownloadPage;

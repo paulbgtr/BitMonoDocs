@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import theme from "../utils/theme";
 import { ChakraProvider, Box } from "@chakra-ui/react";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
@@ -12,4 +12,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Box>
     </ChakraProvider>
   );
-}
+};
+
+export default MyApp;
