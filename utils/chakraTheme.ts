@@ -1,11 +1,23 @@
 import { extendTheme } from "@chakra-ui/react";
 
-const theme = extendTheme({
+const chakraTheme = extendTheme({
   styles: {
     global: {
       body: {
         bg: "#000",
         color: "white",
+      },
+      h1: {
+        fontSize: "50px",
+        fontWeight: "bold",
+        letterSpacing: "-0.02em",
+      },
+      h2: {
+        fontSize: "30px",
+        fontWeight: "bold",
+        marginBottom: "0.5rem",
+        marginTop: "0.5rem",
+        letterSpacing: "-0.02em",
       },
       a: {
         color: "blue.500",
@@ -71,4 +83,4 @@ const theme = extendTheme({
   },
 });
 
-export default theme;
+export default chakraTheme;
