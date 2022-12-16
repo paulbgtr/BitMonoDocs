@@ -28,20 +28,6 @@ const chakraTheme = extendTheme({
     },
   },
   components: {
-    Heading: {
-      variants: {
-        h1: {
-          fontWeight: "bold",
-          lineHeight: "1.2",
-          letterSpacing: "-0.02em",
-        },
-        h2: {
-          fontWeight: "0",
-          lineHeight: "1.2",
-          letterSpacing: "-0.02em",
-        },
-      },
-    },
     Link: {
       baseStyle: {
         fontWeight: "bold",
