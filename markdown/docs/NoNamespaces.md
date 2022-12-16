@@ -1,0 +1,3 @@
+# NoNamespaces
+
+Removes namespaces.

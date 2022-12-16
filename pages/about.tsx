@@ -1,6 +1,4 @@
-// todo: Convert this into a Markdown file
-
-import Markdown from "../markdown/about.mdx";
+import Markdown from "../markdown/about.md";
 import Head from "next/head";
 import { Container } from "@chakra-ui/react";
 
