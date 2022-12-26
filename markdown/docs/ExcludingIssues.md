@@ -5,7 +5,7 @@ Use `criticals.json`
 Add to `CriticalMethods`, `CriticalInterfaces`, or `CriticalBaseTypes` your potential critical things if you have them.
 There is already supported all `Unity` methods and third-party frameworks such as `RocketMod`, `rust-oxide-umod`, `OpenMod`.
 
-```
+```cs
 {
   "CriticalMethods": [
     // Unity

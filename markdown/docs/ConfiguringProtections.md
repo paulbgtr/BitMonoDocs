@@ -6,7 +6,7 @@ Executing of protections depends on how they are located in `protections.json` (
 
 Let's look at this example - first will be executed `AntiILdasm` then `AntiDe4dot` and `ControlFlow` and `BitDotNet` and `FieldsHiding`. Always you could write in `protections.json` - protections that are doesn't mention here or if you create protection by yourself.
 
-```
+```cs
 {
   "Protections": [
     {

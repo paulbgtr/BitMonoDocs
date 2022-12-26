@@ -1,6 +1,6 @@
 # Excluding Protection(s)
 
-```
+```cs
 using System;
 using System.Xml.Serialization;
 using System.Runtime.CompilerServices;

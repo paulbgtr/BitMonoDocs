@@ -4,7 +4,7 @@ Failed to resolve dependency Assembly-CSharp-firstpass, Version=0.0.0.0, Culture
 
 Use `obfuscation.json` and set `FailOnNoRequiredDependency` to false, be careful with this parameter, and change it in cases when file is truly deprecated
 
-```
+```cs
 {
   // Adding visible things that show you have been using BitMono to protect your app
   "Watermark": true,

@@ -2,7 +2,7 @@
 
 How does it works:
 
-```
+```cs
 // Should output Hello, but not - will output: HelloWorld
 Hello();
 
