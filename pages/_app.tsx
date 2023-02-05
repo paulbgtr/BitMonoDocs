@@ -1,3 +1,4 @@
+import "../styles/globals.css";
 import { AppProps } from "next/app";
 import Navbar from "../components/Navbar";
 import chakraTheme from "../utils/chakraTheme";
