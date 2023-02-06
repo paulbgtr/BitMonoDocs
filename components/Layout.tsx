@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { useRouter } from "next/router";
+import Navbar from "../components/Navbar";
 import DocsNavigation from "./DocsNavigation";
 
 type Props = {
@@ -11,13 +12,15 @@ const Layout: FC<Props> = ({ children, className }) => {
   const router = useRouter();
 
   return (
-    <div
-      className={`grid ${className} ${router.pathname == "/documentation" &&
-        "grid-cols-3"}`}
-    >
-      {router.pathname === "/documentation" && <DocsNavigation />}
-      <div>{children}</div>
-    </div>
+    <>
+      <Navbar />
+      <div className="grid md:grid-cols-3">
+        {router.pathname !== "/" && router.pathname !== "/downloads" && (
+          <DocsNavigation />
+        )}
+        <div>{children}</div>
+      </div>
+    </>
   );
 };
 
