@@ -1,5 +1,4 @@
 import Head from "next/head";
-import DocsNavigation from "../components/DocsNavigation";
 import { Container, Center, Text, Link } from "@chakra-ui/react";
 import Layout from "../components/Layout";
 
@@ -16,16 +15,14 @@ const Documentation = () => {
       </Head>
 
       <Layout>
-        <Center>
-          <Text>
-            The documentation is currently being written. Please check back
-            later. <br />
-            You can help by contributing to the{" "}
-            <Link href="https://github.com/gibsol/bitmonodocs">
-              GitHub repository
-            </Link>
-          </Text>
-        </Center>
+        <Text>
+          The documentation is currently being written. Please check back later.{" "}
+          <br />
+          You can help by contributing to the{" "}
+          <Link href="https://github.com/gibsol/bitmonodocs">
+            GitHub repository
+          </Link>
+        </Text>
       </Layout>
     </>
   );
