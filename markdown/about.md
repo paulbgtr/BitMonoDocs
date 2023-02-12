@@ -1,4 +1,4 @@
-# About
+# Getting Started
 
 ## What is Bitmono?
 
