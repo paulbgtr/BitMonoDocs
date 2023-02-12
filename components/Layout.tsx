@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 
 import Navbar from "../components/Navbar";
-import Sidebar from "./SideBar";
+import Sidebar from "./Sidebar";
 
 type Props = {
   className?: string;
