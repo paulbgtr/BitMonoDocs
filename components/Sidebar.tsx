@@ -4,11 +4,12 @@
 // todo: animation of closing and opening the sidebar
 // todo: add responsive design
 
-import { FC } from "react";
-import { Box, UnorderedList, ListItem, Divider } from "@chakra-ui/react";
 import Link from "next/link";
+import { FC } from "react";
 
-const DocsNavigation: FC = () => {
+import { Box, Divider, ListItem, UnorderedList } from "@chakra-ui/react";
+
+const Sidebar: FC = () => {
   return (
     <>
       <div className="flex gap-3">
@@ -74,4 +75,4 @@ const DocsNavigation: FC = () => {
   );
 };
 
-export default DocsNavigation;
+export default Sidebar;

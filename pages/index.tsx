@@ -1,6 +1,8 @@
-import { useRouter } from "next/router";
 import Head from "next/head";
-import { Container, Heading, Text, Button } from "@chakra-ui/react";
+import { useRouter } from "next/router";
+
+import { Button, Container, Heading, Text } from "@chakra-ui/react";
+
 import Layout from "../components/Layout";
 
 const Home = () => {

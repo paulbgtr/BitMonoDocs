@@ -1,14 +1,15 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+
 import {
-  Container,
-  Heading,
-  Text,
-  Button,
-  VStack,
   Alert,
   AlertIcon,
+  Button,
+  Container,
+  Heading,
   Link,
+  Text,
+  VStack,
 } from "@chakra-ui/react";
 
 const DownloadPage = () => {
@@ -27,7 +28,7 @@ const DownloadPage = () => {
 
       <main>
         <Container maxWidth={"3xl"}>
-          <Heading as={"h1"} mb={4} fontSize={[50, 64]} variant={"h1"}>
+          <Heading as={"h1"} mb={4} fontSize={[50, 64]}>
             Downloads
           </Heading>
 
@@ -45,13 +46,7 @@ const DownloadPage = () => {
             </Alert>
           </VStack>
 
-          <Heading
-            as={"h2"}
-            fontSize={[30, 34]}
-            mb={[2, 3]}
-            mt={[3, 4]}
-            variant={"h2"}
-          >
+          <Heading as={"h2"} fontSize={[30, 34]} mb={[2, 3]} mt={[3, 4]}>
             Latest Release
           </Heading>
 
@@ -66,7 +61,7 @@ const DownloadPage = () => {
             Download BitMono
           </Button>
 
-          <Heading mt={5} as={"h2"} fontSize={[30, 34]} variant={"h2"}>
+          <Heading mt={5} as={"h2"} fontSize={[30, 34]}>
             Older Downloads
           </Heading>
 

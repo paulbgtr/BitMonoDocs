@@ -1,6 +1,9 @@
-import Markdown from "../markdown/about.md";
 import Head from "next/head";
+
 import { Container } from "@chakra-ui/react";
+
+import Layout from "../components/Layout";
+import Markdown from "../markdown/about.md";
 
 const About = () => {
   return (
@@ -15,9 +18,11 @@ const About = () => {
       </Head>
 
       <main>
-        <Container maxWidth={"3xl"}>
-          <Markdown />
-        </Container>
+        <Layout>
+          <Container maxWidth={"3xl"}>
+            <Markdown />
+          </Container>
+        </Layout>
       </main>
     </>
   );

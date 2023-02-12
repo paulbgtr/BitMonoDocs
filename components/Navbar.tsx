@@ -1,14 +1,15 @@
 import { FC } from "react";
+
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
-  useDisclosure,
+  Link,
   Stack,
+  useDisclosure,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 const links = {
   about: "/about",

@@ -1,5 +1,7 @@
 import Head from "next/head";
-import { Container, Center, Text, Link } from "@chakra-ui/react";
+
+import { Center, Container, Link, Text } from "@chakra-ui/react";
+
 import Layout from "../components/Layout";
 
 const Documentation = () => {

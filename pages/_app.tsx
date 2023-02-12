@@ -1,7 +1,10 @@
 import "../styles/globals.css";
+
 import { AppProps } from "next/app";
+
+import { Box, ChakraProvider } from "@chakra-ui/react";
+
 import chakraTheme from "../styles/chakraTheme";
-import { ChakraProvider, Box } from "@chakra-ui/react";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

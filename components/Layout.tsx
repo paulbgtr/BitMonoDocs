@@ -1,7 +1,8 @@
-import React, { FC } from "react";
 import { useRouter } from "next/router";
+import React, { FC } from "react";
+
 import Navbar from "../components/Navbar";
-import DocsNavigation from "./DocsNavigation";
+import Sidebar from "./SideBar";
 
 type Props = {
   className?: string;
@@ -16,7 +17,7 @@ const Layout: FC<Props> = ({ children, className }) => {
       <Navbar />
       <div className="grid md:grid-cols-3">
         {router.pathname !== "/" && router.pathname !== "/downloads" && (
-          <DocsNavigation />
+          <Sidebar />
         )}
         <div>{children}</div>
       </div>
