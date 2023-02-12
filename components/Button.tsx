@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { FC } from "react";
+import React from "react";
 
 import { Button as ChakraButton } from "@chakra-ui/react";
 
@@ -8,7 +8,7 @@ interface ButtonProps {
   title: string;
 }
 
-const Button: FC<ButtonProps> = (props) => {
+const Button = (props: ButtonProps) => {
   const router = useRouter();
   return (
     <ChakraButton

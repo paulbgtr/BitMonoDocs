@@ -5,11 +5,11 @@
 // todo: add responsive design
 
 import Link from "next/link";
-import { FC } from "react";
+import React from "react";
 
 import { Box, Divider, ListItem, UnorderedList } from "@chakra-ui/react";
 
-const Sidebar: FC = () => {
+const Sidebar = () => {
   return (
     <>
       <div className="flex gap-3">

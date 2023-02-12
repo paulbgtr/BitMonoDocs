@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from "react";
 
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
@@ -20,7 +20,7 @@ interface NavbarLinkProps {
   title: string;
 }
 
-const NavbarLink: FC<NavbarLinkProps> = (props) => {
+const NavbarLink = (props: NavbarLinkProps) => {
   return (
     <Link variant={"navLink"} href={props.href}>
       {props.title}

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { FC } from "react";
+import React from "react";
 
 import Navbar from "../components/Navbar";
 import Sidebar from "./SideBar";
@@ -9,7 +9,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const Layout: FC<Props> = ({ children, className }) => {
+const Layout = ({ children, className }: Props) => {
   const router = useRouter();
 
   return (
