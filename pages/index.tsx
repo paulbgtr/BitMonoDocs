@@ -20,7 +20,7 @@ const Home = () => {
 
       <main>
         <Layout>
-          <Container maxWidth={"3xl"} mt={[50, 140]}>
+          <Container maxWidth={"3xl"} mx={[0, 100]} mt={[50, 100]}>
             <Heading as={"h1"} fontSize={[50, 64]}>
               An open-source, free protector for Mono
             </Heading>
