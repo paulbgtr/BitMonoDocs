@@ -1,0 +1,46 @@
+{
+  "protections": [
+    {
+      "name": "AntiLdasm"
+    },
+    {
+      "name": "AntiDe4dot"
+    },
+    {
+      "name": "BitDotnet"
+    },
+    {
+      "name": "BitMono"
+    },
+    {
+      "name": "BitTimeDateStamp"
+    },
+    {
+      "name": "BitMethodDotnet"
+    },
+    {
+      "name": "AntiDecompiler"
+    },
+    {
+      "name": "AntiDebugBreakpoints"
+    },
+    {
+      "name": "CallToCalli"
+    },
+    {
+      "name": "DotNetHook"
+    },
+    {
+      "name": "FullRenamer"
+    },
+    {
+      "name": "ObjectReturnType"
+    },
+    {
+      "name": "StringsEncryption"
+    },
+    {
+      "name": "NoNamespaces"
+    }
+  ]
+}
