@@ -1,4 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
+
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Button from "../components/Button";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
@@ -9,12 +16,24 @@ const Home = () => {
           name="description"
           content="An open-source, free protector for Mono"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon.ico" />
       </Head>
 
       <main>
-        <h1>Hello</h1>
-        <button className="btn">Hello</button>
+        <Hero>
+          <p className="text-xl">
+            Unlock new level of security with{" "}
+            <span className="text-3xl font-bold">BitMono</span>. Advanced code
+            obfuscation that protects your intellectual property like never
+            before.
+          </p>
+          <div className="flex gap-3 mt-3">
+            <Button href="/docs">Get Started</Button>
+            <Button href="https://github.com/sunnamed434/BitMono">
+              Star on Github
+            </Button>
+          </div>
+        </Hero>
       </main>
     </>
   );
