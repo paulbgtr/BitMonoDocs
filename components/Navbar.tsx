@@ -9,13 +9,6 @@ const Navbar = () => {
           Bitmono
         </Link>
       </div>
-      <div className="flex-none">
-        <ul className="px-1 menu menu-horizontal">
-          <li>
-            <Link href="/docs">Docs</Link>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 };
