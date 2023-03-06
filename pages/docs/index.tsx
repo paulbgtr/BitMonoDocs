@@ -1,6 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import { remark } from "remark";
 import html from "remark-html";
 
@@ -15,9 +16,22 @@ type Props = {
 
 const About = ({ content, data }: Props) => {
   return (
-    <Layout>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-    </Layout>
+    <>
+      <Head>
+        <title>Bitmono | Getting Started</title>
+        <meta
+          name="description"
+          content="An open-source, free protector for Mono"
+        />
+        <link rel="icon" href="./favicon.ico" />
+      </Head>
+
+      <main>
+        <Layout>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+        </Layout>
+      </main>
+    </>
   );
 };
 
