@@ -24,7 +24,9 @@ const Protections = () => {
       <ul>
         {protections.map((protection) => (
           <li key={protection.name}>
-            <a href={`docs/${protection.name}`}>{protection.name}</a>
+            <a href={`docs/protections/${protection.name}`}>
+              {protection.name}
+            </a>
           </li>
         ))}
       </ul>
