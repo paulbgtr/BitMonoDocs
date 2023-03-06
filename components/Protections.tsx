@@ -6,8 +6,8 @@ const FileList = () => {
 
   useEffect(() => {
     const fetchFileNames = async () => {
-      const response = await fetch("/api/getProtections");
-      const data = await response.json();
+      const res = await fetch("/api/getProtections");
+      const data = await res.json();
       setFileNames(data);
     };
     fetchFileNames();
