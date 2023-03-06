@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import protectionsData from "../data/protections.json";
+import protectionNames from "../markdown/protections/protections.json";
 
 type Protection = {
   name: string;
@@ -10,7 +10,7 @@ const Protections = () => {
   const [protections, setProtections] = useState<Protection[]>([]);
 
   useEffect(() => {
-    const mappedProtections = protectionsData.protections.map(
+    const mappedProtections = protectionNames.protections.map(
       (protection): Protection => ({
         name: protection.name,
       })
