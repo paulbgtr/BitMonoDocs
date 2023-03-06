@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <Link
         href="https://github.com/Gibsol/BitMonoDocs"
-        className="flex gap-1 text-sm"
+        className="flex gap-1 pr-3 text-sm"
       >
         Improve this page on GitHub
         <FontAwesomeIcon icon={faGithub} />
