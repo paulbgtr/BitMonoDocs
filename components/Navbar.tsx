@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   return (
@@ -9,6 +11,13 @@ const Navbar = () => {
           Bitmono
         </Link>
       </div>
+      <Link
+        href="https://github.com/Gibsol/BitMonoDocs"
+        className="flex gap-1 text-sm"
+      >
+        Improve this page on GitHub
+        <FontAwesomeIcon icon={faGithub} />
+      </Link>
     </div>
   );
 };
