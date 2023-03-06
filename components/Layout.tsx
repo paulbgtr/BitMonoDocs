@@ -13,16 +13,10 @@ const Layout = ({ children }: Props) => {
 
   return (
     <>
-      {router.pathname === "/" || router.pathname === "/404" ? (
-        <div>{children}</div>
-      ) : (
-        <>
-          <Navbar />
-          <Drawer>
-            <div>{children}</div>
-          </Drawer>
-        </>
-      )}
+      <Navbar />
+      <Drawer>
+        <div className="px-10">{children}</div>
+      </Drawer>
     </>
   );
 };
