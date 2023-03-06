@@ -4,6 +4,8 @@ import { GetStaticProps } from "next";
 import { remark } from "remark";
 import html from "remark-html";
 
+import Layout from "../../components/Layout";
+
 type Props = {
   content: string;
   data: {
@@ -12,7 +14,11 @@ type Props = {
 };
 
 const About = ({ content, data }: Props) => {
-  return <div dangerouslySetInnerHTML={{ __html: content }} />;
+  return (
+    <Layout>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
+    </Layout>
+  );
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
