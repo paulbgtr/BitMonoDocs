@@ -17,7 +17,7 @@ const Home = () => {
 
       <main>
         <Hero centered title="404 Not Found">
-          <Link href="/" className="link">
+          <Link href="/docs" className="link">
             Go Home
           </Link>
         </Hero>
