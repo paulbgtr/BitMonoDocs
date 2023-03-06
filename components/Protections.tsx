@@ -1,32 +1,25 @@
-import React, { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 
-import protectionNames from "../markdown/protections/protections.json";
-
-type Protection = {
-  name: string;
-};
-
-const Protections = () => {
-  const [protections, setProtections] = useState<Protection[]>([]);
+const FileList = () => {
+  const [fileNames, setFileNames] = useState<string[]>([]);
 
   useEffect(() => {
-    const mappedProtections = protectionNames.protections.map(
-      (protection): Protection => ({
-        name: protection.name,
-      })
-    );
-    setProtections(mappedProtections);
+    const fetchFileNames = async () => {
+      const response = await fetch("/api/getProtections");
+      const data = await response.json();
+      setFileNames(data);
+    };
+    fetchFileNames();
   }, []);
 
   return (
     <div>
-      <h2>Protections</h2>
+      <h5>Protections</h5>
       <ul>
-        {protections.map((protection) => (
-          <li key={protection.name}>
-            <a href={`docs/protections/${protection.name}`}>
-              {protection.name}
-            </a>
+        {fileNames.map((fileName, index) => (
+          <li key={index}>
+            <Link href={`docs/protections/${fileName}`}>{fileName}</Link>
           </li>
         ))}
       </ul>
@@ -34,4 +27,4 @@ const Protections = () => {
   );
 };
 
-export default Protections;
+export default FileList;
