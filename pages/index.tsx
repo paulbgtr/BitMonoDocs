@@ -4,7 +4,6 @@ import Link from "next/link";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Button from "../components/Button";
 import Hero from "../components/Hero";
 
 const Home = () => {
@@ -28,10 +27,18 @@ const Home = () => {
             like never before.
           </p>
           <div className="flex gap-3 mt-3">
-            <Button href="/docs">Get Started</Button>
-            <Button href="https://github.com/sunnamed434/BitMono">
+            <Link
+              href="/docs"
+              className="text-black bg-white hover:bg-white hover:opacity-50 btn"
+            >
+              Get Started
+            </Link>
+            <Link
+              href="https://github.com/sunnamed434/BitMono"
+              className="text-black bg-white hover:bg-white hover:opacity-50 btn"
+            >
               Star on Github
-            </Button>
+            </Link>
           </div>
         </Hero>
       </main>
