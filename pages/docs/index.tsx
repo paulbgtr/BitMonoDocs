@@ -32,7 +32,7 @@ const About = ({ content }: Props) => {
   );
 };
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const file = fs.readFileSync(`${process.cwd()}/markdown/about.md`, "utf8");
 
   const { content, data } = matter(file);
