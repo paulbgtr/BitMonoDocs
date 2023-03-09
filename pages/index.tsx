@@ -21,11 +21,11 @@ const Home = () => {
 
       <main>
         <Hero>
-          <p className="text-xl">
+          <p className="md:text-xl">
             Unlock new level of security with{" "}
-            <span className="text-3xl font-bold">BitMono</span>. Advanced code
-            obfuscation that protects your intellectual property like never
-            before.
+            <span className="text-xl font-bold md:text-3xl">BitMono</span>.
+            Advanced code obfuscation that protects your intellectual property
+            like never before.
           </p>
           <div className="flex gap-3 mt-3">
             <Button href="/docs">Get Started</Button>
