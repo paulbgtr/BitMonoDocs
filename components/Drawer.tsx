@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +14,7 @@ const Drawer = ({ children }: Props) => {
   return (
     <div className="drawer drawer-mobile">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="flex flex-col items-center drawer-content">
+      <div className="flex flex-col drawer-content">
         <label
           htmlFor="my-drawer-2"
           className="self-start btn btn-ghost drawer-button lg:hidden"
