@@ -35,9 +35,7 @@ const Protection = ({ content }: Props) => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const protectionName = params?.protectionName;
   const markdownWithMetadata = fs
-
     .readFileSync(`${process.cwd()}/markdown/protections/${protectionName}.md`)
-
     .toString();
 
   const parsedMarkdown = matter(markdownWithMetadata);
