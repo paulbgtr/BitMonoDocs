@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const FileList = () => {
   const [fileNames, setFileNames] = useState<string[]>([]);
@@ -19,7 +19,7 @@ const FileList = () => {
       <ul>
         {fileNames.map((fileName, index) => (
           <li key={index}>
-            <Link href={`docs/protections/${fileName}`}>{fileName}</Link>
+            <Link href={`/docs/protections/${fileName}`}>{fileName}</Link>
           </li>
         ))}
       </ul>
