@@ -9,12 +9,9 @@ import Layout from "../../components/Layout";
 
 type Props = {
   content: string;
-  data: {
-    [key: string]: any;
-  };
 };
 
-const About = ({ content, data }: Props) => {
+const About = ({ content }: Props) => {
   return (
     <>
       <Head>
